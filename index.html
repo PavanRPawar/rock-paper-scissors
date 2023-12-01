@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="score-container">
+        <div class="logo">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+        <div class="score">
+            <div class="computer-score">
+                <p>COMPUTER</p>
+                <p>SCORE</p>
+                <span id="cscore">0</span>
+            </div>
+            <div class="user-score">
+                <p>YOUR</p>
+                <p>SCORE</p>
+                <span id="uscore">0</span>
+            </div>  
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div class="info">
+            <p class="user">YOU PICKED</p>
+            <p class="pc">PC PICKED</p>
+        </div>
+
+        <div class="option">
+            <img class="triangle" src="./images/bg-triangle.svg" alt="">
+            <div class="rock user-select">
+                <div class="item">
+                    <img src="./images/rock.svg" alt="">
+                </div>
+            </div>
+            <div class="scissors user-select">
+                <div class="item">
+                    <img src="./images/scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="paper user-select">
+                <div class="item">
+                    <img src="./images/paper.svg" alt="">
+                </div>
+            </div>
+            
+            <div class="rock computer">
+                <div class="item">
+                    <img src="./images/rock.svg" alt="">
+                </div>
+            </div>
+            <div class="scissors computer">
+                <div class="item">
+                    <img src="./images/scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="paper computer">
+                <div class="item">
+                    <img src="./images/paper.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-div">
+            <button class="btn-rule">RULES</button>
+            <button class="btn-next"><a href="hurray.html">NEXT</a></button>
+        </div>
+
+        <div class="rules" id="rule">
+            <div class="close-btn">
+                <p>X</p>
+            </div>
+            <div class="rule-text">Game Rules</div>
+            <ul>
+                <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li>
+                <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li>
+                <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+            </ul>
+        </div>
+
+        <div class="win-modal">
+            <h1 class="winner">YOU WIN</h1>
+            <p class="oppo">AGAINST PC</p>
+            <button class="play">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

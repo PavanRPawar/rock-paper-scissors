@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8CC461;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ============================= */
+/* ======== HURRAY PAGE ======== */
+/* ============================= */
+
+.hurray-container {
+    height: 85vh;
+    position: relative;
+    margin: 0 auto;
+    width: 45rem;
+    margin-top: 2rem;
+}
+
+.stars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+}
+
+.cup,
+.hurray,
+.win-text,
+.hurray-play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10rem; 
+}
+
+.hurray {
+    color: white;
+    font-size: 85px;
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+.win-text {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.play {
+    background: #fff;
+    letter-spacing: 3px;
+    color: #6B6B6B;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 17px;
+    border: none;
+    border-radius: 9px;
+}
+
+.hurray-play {
+    padding-top: 40px;
+}
+
+.btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 2rem 0.5rem 0;
+    gap: 32px;
+}
+
+.btn-rule {
+    padding: 9px 25px;
+    border: 2px solid #fff;
+    outline: none;
+    background: transparent;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ============================= */
+/* ======= RULES SECTION ======= */
+/* ============================= */
+
+#rule {
+    display: none;
+}
+
+.rules {
+    top: 18rem;
+    right: 3rem;
+    width: 19.7rem;
+    height: 22rem;
+    background-color: #004429;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    position: absolute;
+}
+  
+ul {
+    padding: 15px 20px 0 35px;
+}
+
+li {
+    padding-bottom: 0.6em;
+    padding-right: 0.2em;
+    color: #FFD600;
+    list-style: square;
+}
+
+li span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 8.23px;
+}
+
+.rule-text {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.close-btn {
+    background: #FF0000;
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 17.5em;
+    bottom: 20.1em; 
+    text-align: center;
+} 
+
+.close-btn p {
+    font-size: 34px;
+    font-weight: 600;
+}
